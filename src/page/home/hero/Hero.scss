@@ -1,0 +1,86 @@
+.hero{
+    padding-bottom: 16px;
+    &__boxes-wrapper{
+        display: flex;
+        align-items: center;
+        background-color: #D7CDC3;
+        @media (max-width:540px) {
+            flex-direction: column;
+        }
+    } 
+    &__left-boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 500px;
+        padding: 24px 12px;
+        @media (max-width:540px) {
+            width: 100%;
+         }
+        &__title{
+            text-transform: uppercase;
+            font-size: 56px;
+            line-height: 96%;
+            margin-bottom:8px;
+            color: black;
+            @media (max-width:1280px) {
+            font-size: 44px;
+            }
+            @media (max-width:1025px) {
+                font-size: 32px;
+            }
+            @media (max-width:770px) {
+                font-size: 24px;
+            }
+        }
+        &__text{
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 117%;
+            margin-bottom:24px;
+            text-align: center;
+            color: black;
+            @media (max-width:886px) {
+                font-size: 14px;
+            }
+            @media (max-width:770px) {
+                font-size: 12px;
+            }
+        }
+        &__btn{
+            border: none;
+            padding: 12px 16px;
+            border-radius: 100px;
+            font-size: 15px;
+            line-height: 120%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            width: 80%;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @media (max-width:1025px) {
+                margin-bottom: 20px;
+            }
+            @media (max-width:770px) {
+                margin-bottom: 12px;
+                font-size: 13px;
+            }
+            @media (max-width:540px) {
+                display: none;
+            }
+        }
+    } 
+    &__right-boxes{
+        flex-grow: 1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
